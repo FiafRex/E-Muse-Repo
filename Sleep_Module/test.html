@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Prompt Example</title>
+</head>
+<body>
+
+<script>
+function displayPrompt() {
+  // Create a prompt element
+  var promptElement = document.createElement("div");
+  promptElement.id = "prompt";
+  promptElement.innerHTML = "This is a prompt.";
+
+  // Add the prompt element to the body of the document
+  document.body.appendChild(promptElement);
+
+  // Set a timer to remove the prompt element after 5 seconds
+  setTimeout(function() {
+    document.body.removeChild(promptElement);
+  }, 5000);
+}
+
+// Call the displayPrompt function
+displayPrompt();
+</script>
+
+</body>
+</html>
